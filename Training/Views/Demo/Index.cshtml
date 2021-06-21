@@ -1,0 +1,49 @@
+﻿@model DemoViewModel
+@{
+    ViewData["Title"] = "Demo";
+}
+<div>
+    <form id="indexForm" action="/Demo/Index" method="post">
+        <table>
+            <tr>
+                <td> 產品編號 </td>
+                <td>
+                    <input type="text" name="ProductID" value=@Model.ProductID />
+                    @Html.ValidationMessageFor(m => m.ProductID, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td> 產品名稱 </td>
+                <td>
+                    <input type="text" name="ProductNM" value=@Model.ProductNM />
+                    @Html.ValidationMessageFor(m => m.ProductNM, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td> 產品數量 </td>
+                <td>
+                    <input type="number" name="Quantity" value=@Model.Quantity />
+                    @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td> 是否停產 </td>
+                <td>
+                    @Html.CheckBoxFor(m => Model.IsDisable)
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <input id="submit" name="submit" type="button" value="Submit" onclick="formSubmit()" />
+</div>
+
+@section Scripts{
+
+    <script>
+        function formSubmit() {
+            document.getElementById("indexForm").submit();
+        }
+    </script>
+
+}

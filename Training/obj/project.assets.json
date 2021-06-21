@@ -1,0 +1,81 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Training.Models.V2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Training.Models.V2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Training.Models.V2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Training.Models.V2/1.0.0": {
+      "type": "project",
+      "path": "../Training.Models.V2/Training.Models.V2.csproj",
+      "msbuildProject": "../Training.Models.V2/Training.Models.V2.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Training.Models.V2 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cwzhang\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\training\\Training\\Training.csproj",
+      "projectName": "Training",
+      "projectPath": "E:\\training\\Training\\Training.csproj",
+      "packagesPath": "C:\\Users\\cwzhang\\.nuget\\packages\\",
+      "outputPath": "E:\\training\\Training\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\cwzhang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "E:\\training\\Training.Models.V2\\Training.Models.V2.csproj": {
+              "projectPath": "E:\\training\\Training.Models.V2\\Training.Models.V2.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}
